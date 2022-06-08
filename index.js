@@ -7,6 +7,7 @@ function returnsANamedFunction(){
 function  receivesAFunction(callback){
    callback();
 }
-var anonymous =function  returnsAnAnonymousFunction(){
-    return anonymous();
+var fn = function (){
+    fn = returnsAnAnonymousFunction()
+    return fn()
 }
