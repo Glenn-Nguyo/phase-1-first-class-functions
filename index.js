@@ -7,7 +7,10 @@ function returnsANamedFunction(){
 function  receivesAFunction(callback){
    callback();
 }
-var fn = function (){
-    fn = returnsAnAnonymousFunction()
-    return fn()
-}
+//var fn = function (){
+    //fn = returnsAnAnonymousFunction()
+   // return fn()
+//}
+function returnsAnAnonymousFunction(){
+    return () => {};
+    }
